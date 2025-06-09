@@ -3,7 +3,10 @@ PostgreSQL High Availability Setup. Here we are going to talk about a high avail
 
 ### Table of Contents:
 1. Etcd - Leader state, consensus (via Raft). This is used for coordination.
-2. 
+2. Postgres Stateful Set
+3. Patroni
+4. HA Proxy
+5. PGBackRest - Backup with WAL
 
 
 ## ETCD
