@@ -10,4 +10,4 @@ export NAMESPACE=$NAMESPACE
 
 POSTGRES_SINGLE_YAML=./pg_single/pg-single.yaml
 
-kubectl delete -n "$NAMESPACE" -f $POSTGRES_SINGLE_YAML
+envsubst < $POSTGRES_SINGLE_YAML | kubectl delete -n "$NAMESPACE" -f -

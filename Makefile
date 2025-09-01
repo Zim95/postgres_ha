@@ -9,7 +9,7 @@ dev_teardown:
 	./scripts/development/postgres/postgres.teardown.sh $(NAMESPACE)
 
 dev_pg_single_setup:
-	./scripts/development/pg_single/pg_single.setup.sh $(NAMESPACE) $(POSTGRES_USER) $(POSTGRES_PASSWORD) $(POSTGRES_DB)
+	./scripts/development/pg_single/pg_single.setup.sh $(NAMESPACE) $(POSTGRES_USER) $(POSTGRES_PASSWORD) $(POSTGRES_DB) $(POSTGRES_TEST_DB)
 
 dev_pg_single_teardown:
 	./scripts/development/pg_single/pg_single.teardown.sh $(NAMESPACE)
